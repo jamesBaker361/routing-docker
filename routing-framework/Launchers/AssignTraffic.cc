@@ -219,8 +219,8 @@ inline void assignTraffic(const CommandLineParser& clp) {
   // Read the OD pairs from file and reorder them if necessary.
   auto odPairs = importClusteredODPairsFrom(demandFileName);
   for (auto& pair : odPairs) {
-    assert(pair.origin >= 0); assert(pair.origin <= maxOrigId);
-    assert(pair.destination >= 0); assert(pair.destination <= maxOrigId);
+    assert(pair.origin >= 0); //assert(pair.origin <= maxOrigId);
+    assert(pair.destination >= 0); //assert(pair.destination <= maxOrigId);
     pair.origin = origToCurrentId[pair.origin];
     pair.destination = origToCurrentId[pair.destination];
   }

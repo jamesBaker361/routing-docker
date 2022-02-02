@@ -1,5 +1,4 @@
 # Input graph: data/beamville/graph.gr.bin
 # Methodology: geometrically distributed Dijkstra ranks (1)
 origin,destination,dijkstra_rank
-227077,1639372,1
-1710784,1736658,2
+625050,625063,1

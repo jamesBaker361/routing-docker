@@ -37,9 +37,6 @@ elseif(CMAKE_CXX_COMPILER_ID MATCHES Clang)
       -ftemplate-backtrace-limit=1 -Wno-sign-compare")
 endif()
 
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -g")
-SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} -g")
-
 include_directories(${CMAKE_SOURCE_DIR})
 
 find_package(OpenMP)
